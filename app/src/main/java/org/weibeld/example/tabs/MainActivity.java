@@ -17,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
 
     // Titles of the individual pages (displayed in tabs)
     private final String[] PAGE_TITLES = new String[] {
-            "Page 1",
-            "Page 2",
-            "Page 3"
+            "Day1",
+            "Day2",
+            "Day3"
     };
 
     // The fragments that are used as the individual pages
