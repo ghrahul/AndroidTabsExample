@@ -25,7 +25,8 @@ public class Page1Fragment extends Fragment {
           "Debate",
            "Music",
             "Busketball",
-             "Cricket"
+             "Cricket",
+                "Football"
 
         };
         ListView lv1 = (ListView)rootView.findViewById(R.id.day1list);
