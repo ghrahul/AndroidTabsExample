@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Osproject.iml" filepath="$PROJECT_DIR$/Osproject.iml" />
+      <module fileurl="file://C:\Users\Anubhav\Desktop\Osproject\Osproject.iml" filepath="C:\Users\Anubhav\Desktop\Osproject\Osproject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Anubhav\Desktop\Osproject\app\app.iml" filepath="C:\Users\Anubhav\Desktop\Osproject\app\app.iml" />
     </modules>
   </component>
 </project>
