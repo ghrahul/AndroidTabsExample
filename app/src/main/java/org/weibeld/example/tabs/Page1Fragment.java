@@ -34,9 +34,9 @@ public class Page1Fragment extends Fragment {
         ListView lv1 = (ListView)rootView.findViewById(R.id.day1list);
         ArrayAdapter<String> lva = new ArrayAdapter<String>(
                 getActivity(), android.R.layout.simple_list_item_1, day1array);
-        /*lv1.setAdapter(lva);
+        lv1.setAdapter(lva);
 
-        lv1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        /*lv1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 if (position == 0) {
@@ -51,8 +51,8 @@ public class Page1Fragment extends Fragment {
 
 
 
-            }
-        });*/
+            }*/
+        });
 
 
         return rootView;
