@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.weibeld.example">
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <!--
       If using a Toolbar as the activities' app bars (instead of the default ActionBar), must use
       a theme inheriting from Theme.AppCompat.*.NoActionBar. This prevents the default ActionBar
@@ -13,13 +19,14 @@
         android:label="SINUSOID"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name="org.weibeld.example.tabs.MainActivity">
+        <activity android:name=".tabs.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".tabs.social_login"></activity>
     </application>
 
 </manifest>
