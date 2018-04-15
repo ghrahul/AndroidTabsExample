@@ -20,6 +20,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".tabs.BugHunter"/>
+        <activity android:name=".tabs.Codejam"/>
+        <activity android:name=".tabs.Robowar"/>
+        <activity android:name=".tabs.Hackathon"/>
+
     </application>
 
 </manifest>
