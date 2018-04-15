@@ -17,12 +17,10 @@ public class Page2Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_page2, container, false);
         String[] day2array = {
-                "Debate",
-                "Music",
-                "Busketball",
-                "Cricket",
-                "Football",
-                "Badminton"
+                "Code in Emoji",
+                "Darwin Games",
+                "First Searching",
+                "Capture The Flag"
 
         };
         ListView lv2 = (ListView)rootView.findViewById(R.id.day2list);

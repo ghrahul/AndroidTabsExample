@@ -17,18 +17,7 @@ public class Page3Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_page3, container, false);
         String[] day3array = {
-                "Debate",
-                "Music",
-                "Busketball",
-                "Cricket",
-                "Football",
-                "Badminton",
-                "Debate",
-                "Music",
-                "Busketball",
-                "Cricket",
-                "Football",
-                "Badminton"
+                "Hello"
 
         };
         ListView lv3 = (ListView)rootView.findViewById(R.id.day3list);
