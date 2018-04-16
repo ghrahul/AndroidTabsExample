@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/pageColor1">
 
+
     <ListView
         android:id="@+id/day1list"
         android:layout_width="fill_parent"

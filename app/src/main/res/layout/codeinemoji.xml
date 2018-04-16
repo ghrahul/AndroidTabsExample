@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Robowar"
+        android:text="Code In Emoji"
         android:textSize="40dp"
         android:fontFamily="sans-serif-smallcaps"
         android:textColor="#f10e0e"
@@ -40,11 +40,7 @@
                 android:layout_below="@id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="RoboWar is an open source video game in which the player programs onscreen icon-like robots to battle each other with animation and sound effects. The syntax of the language in which the robots are programmed is a relatively simple stack-based one, based largely on IF, THEN, and simply-defined variables.
-
-25 RoboWar tournaments were held in the past between 1989 until roughly 2003, when tournaments became intermittent and many of the major coders moved on. All robots from all tournaments are available on the RoboWar website.
-
-The RoboWar programming language, RoboTalk, is a stack-oriented programming language and is similar in structure to FORTH."
+                android:text="Emojicode is a full-blown programming language consisting of emojis."
                 android:textSize="22dp"
 
                 />

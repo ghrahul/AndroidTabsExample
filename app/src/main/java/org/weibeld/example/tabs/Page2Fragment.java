@@ -1,10 +1,12 @@
 package org.weibeld.example.tabs;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -17,10 +19,10 @@ public class Page2Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_page2, container, false);
         String[] day2array = {
-                "Code in Emoji",
-                "Darwin Games",
-                "First Searching",
-                "Capture The Flag"
+                "CODE IN EMOJI",
+                "DARWIN GAMES",
+                "FIRST SEARCHING",
+                "CAPTURE THE FLAG"
 
         };
         ListView lv2 = (ListView)rootView.findViewById(R.id.day2list);
@@ -28,7 +30,21 @@ public class Page2Fragment extends Fragment {
                 getActivity(), android.R.layout.simple_list_item_1, day2array);
         lv2.setAdapter(lvb);
 
+        lv2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                if (position == 0) {
+                    Intent myIntent = new Intent(view.getContext(), CodeInEmoji.class);
+                    startActivityForResult(myIntent, 0);
+                }
 
+
+
+
+
+
+            }
+        });
         return rootView;
     }
 

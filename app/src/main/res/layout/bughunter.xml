@@ -1,16 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<RelativeLayout
+
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/app_bar_image"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_below="@id/app_bar_image"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="Bug Hunter"
-        android:textSize="40sp" />
+        android:textSize="40dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#f10e0e"
+        />
+
+
+    <ScrollView
+        android:layout_below="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/TextView2"
+                android:layout_below="@id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A bug bounty program, also called a vulnerability rewards program (VRP), is a crowdsourcing initiative that rewards individuals for discovering and reporting software bugs. Bug bounty programs are often initiated to supplement internal code audits and penetration tests as part of an organization's vulnerability management strategy.
+
+Many software vendors and websites run bug bounty programs, paying out cash rewards to software security researchers and white hat hackers who report software vulnerabilities that have the potential to be exploited. Bug reports must document enough information for for the organization offering the bounty to be able to reproduce the vulnerability. Typically, payment amounts are commensurate with the size of the organization, the difficulty in hacking the system and how much impact on users a bug might have."
+                android:textSize="22dp"
+
+                />
+
+        </RelativeLayout>
 
 
 
-</LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
+
+
+

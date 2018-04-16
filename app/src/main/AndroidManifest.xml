@@ -15,7 +15,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="SINUSOID"
+        android:label="SINUSOID V2.0"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".tabs.MainActivity">
@@ -29,14 +29,7 @@
         <activity android:name=".tabs.Codejam" />
         <activity android:name=".tabs.Robowar" />
         <activity android:name=".tabs.Hackathon" />
-        <activity
-            android:name=".tabs.Main2Activity"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
-            android:name=".tabs.Main3Activity"
-            android:label="@string/title_activity_main3"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".tabs.CodeInEmoji"/>
     </application>
 
 </manifest>

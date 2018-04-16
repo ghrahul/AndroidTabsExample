@@ -20,10 +20,10 @@ public class Page1Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_page1, container, false);
         String[] day1array = {
-                "Codejam",
-                "Hackathon",
-                "Robowar",
-                "Bug Hunter",
+                "CODEJAM",
+                "HACKATHON",
+                "ROBOWAR",
+                "BUG HUNTER",
 
 
         };
