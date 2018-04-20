@@ -30,6 +30,7 @@ public class Page1Fragment extends Fragment {
         ListView lv1 = (ListView)rootView.findViewById(R.id.day1list);
         ArrayAdapter<String> lva = new ArrayAdapter<String>(
                 getActivity(), android.R.layout.simple_list_item_1, day1array);
+
         lv1.setAdapter(lva);
 
 

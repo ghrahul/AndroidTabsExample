@@ -18,6 +18,9 @@
         android:layout_height="75dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.AppCompat"
+
+
         >
 
         <Button
@@ -25,7 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:text="LogIn" />
+            android:text="LogIn"
+            />
 
     </android.support.v7.widget.Toolbar>
 

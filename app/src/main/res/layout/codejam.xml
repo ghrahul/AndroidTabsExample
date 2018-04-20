@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    >
+    <android.support.design.widget.FloatingActionButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:backgroundTint="#f1b4b4b4"
+        android:src="@drawable/ic_add_black_24dp"/>
+
 <RelativeLayout
 
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
 
     <ImageView
         android:id="@+id/app_bar_image"
@@ -21,39 +37,90 @@
         android:text="Codejam"
         android:textSize="40dp"
         android:fontFamily="sans-serif-smallcaps"
-        android:textColor="#f10e0e"
+        android:textColor="#e7e3e3"
+        android:background="#020610"
         />
 
 
     <ScrollView
         android:layout_below="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/bc">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <LinearLayout
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:tools="http://schemas.android.com/tools"
+           android:layout_width="match_parent"
+           xmlns:card_view="http://schemas.android.com/apk/res-auto"
+           android:layout_height="match_parent">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#5a000000"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/logo"/>
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/image1"
+                            android:paddingTop="7dp"
+                            android:textSize="25dp"
+                            android:text="Date : 26.04.18"
+                            android:textColor="#bfbfbf"/>
+
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/image1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/logo" />
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/image2"
+                            android:layout_below="@id/text1"
+                            android:paddingTop="6dp"
+                            android:textSize="25dp"
+                            android:text="Time : 11:00 am"
+                            android:textColor="#bfbfbf"/>
 
 
-            <TextView
-                android:id="@+id/TextView2"
-                android:layout_below="@id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Google Code Jam is an international programming competition hosted and administered by Google. The competition began in 2003 as a means to identify top engineering talent for potential employment at Google. The competition consists of a set of algorithmic problems which must be solved in a fixed amount of time. Competitors may use any programming language and development environment to obtain their solutions. From 2003 to 2007, Google Code Jam was deployed on Topcoder's platform and had quite different rule. Since 2008 Google has developed their own dedicated infrastructure for the contest.
 
-Starting from 2015, Google also runs Distributed Code Jam, with the focus on distributed algorithms. This is run in parallel with the regular Code Jam, with its own qualification and final round, for a top prize of $10,000, but is only open for people who qualify to Round 2 of Code Jam (up to 3000 people)."
-                android:textSize="22dp"
 
-                />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
 
-        </RelativeLayout>
+        </LinearLayout>
 
 
 
     </ScrollView>
 
 </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
 
 
 

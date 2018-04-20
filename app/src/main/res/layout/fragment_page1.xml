@@ -7,6 +7,7 @@
     android:background="@color/pageColor1">
 
 
+
     <ListView
         android:id="@+id/day1list"
         android:layout_width="fill_parent"
@@ -15,7 +16,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:divider="#9f9999"
-        android:dividerHeight="1dp"
+        android:dividerHeight="0.5dp"
+
         />
+
+
 
 </RelativeLayout>

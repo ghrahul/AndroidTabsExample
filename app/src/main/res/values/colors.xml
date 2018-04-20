@@ -10,6 +10,6 @@
 
     <!-- For pages of ViewPager -->
     <color name="pageColor1">#FFF59D</color>
-    <color name="pageColor2">#FFCC80</color>
-    <color name="pageColor3">#FFAB91</color>
+    <color name="pageColor2">#84f6fa</color>
+    <color name="pageColor3">#e484f97a</color>
 </resources>
