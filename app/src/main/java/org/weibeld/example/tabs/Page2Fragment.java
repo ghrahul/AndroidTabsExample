@@ -37,11 +37,19 @@ public class Page2Fragment extends Fragment {
                     Intent myIntent = new Intent(view.getContext(), CodeInEmoji.class);
                     startActivityForResult(myIntent, 0);
                 }
+                if (position == 1) {
+                    Intent myIntent = new Intent(view.getContext(), DarwinGames.class);
+                    startActivityForResult(myIntent, 1);
+                }
 
-
-
-
-
+                if (position == 2) {
+                    Intent myIntent = new Intent(view.getContext(), FirstSearching.class);
+                    startActivityForResult(myIntent, 2);
+                }
+                if (position == 3) {
+                    Intent myIntent = new Intent(view.getContext(), CaptureTheFlag.class);
+                    startActivityForResult(myIntent, 3);
+                }
 
             }
         });
