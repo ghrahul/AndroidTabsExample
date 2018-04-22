@@ -128,7 +128,7 @@
                             android:layout_below="@id/text2"
                             android:paddingTop="6dp"
                             android:textSize="25sp"
-                            android:text="Venue : Audi"
+                            android:text="Venue : Network Lab - AC II"
                             android:textColor="#bfbfbf"/>
                         <ImageView
                             android:id="@+id/image4"
@@ -149,7 +149,7 @@
                             android:layout_below="@id/text3"
                             android:paddingTop="6dp"
                             android:textSize="25sp"
-                            android:text="Team Members : 3"
+                            android:text="Team Members : 5"
                             android:textColor="#bfbfbf"/>
                         <ImageView
                             android:id="@+id/image5"
