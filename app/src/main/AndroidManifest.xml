@@ -13,32 +13,36 @@
       from showing up.
     -->
     <application
-        android:hardwareAccelerated="false"
-        android:largeHeap="true"
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@drawable/logo"
         android:label="siNUsoid v2"
+        android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".tabs.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".tabs.BugHunter" />
         <activity android:name=".tabs.Codejam" />
         <activity android:name=".tabs.Robowar" />
         <activity android:name=".tabs.Hackathon" />
-        <activity android:name=".tabs.CodeInEmoji"/>
-        <activity android:name=".tabs.DarwinGames"/>
-        <activity android:name=".tabs.FirstSearching"/>
-        <activity android:name=".tabs.CaptureTheFlag"/>
-        <activity android:name=".tabs.Fifa"/>
-        <activity android:name=".tabs.COD"/>
-        <activity android:name=".tabs.CSGO"/>
-        <activity android:name=".tabs.Battlefield"/>
+        <activity android:name=".tabs.CodeInEmoji" />
+        <activity android:name=".tabs.DarwinGames" />
+        <activity android:name=".tabs.FirstSearching" />
+        <activity android:name=".tabs.CaptureTheFlag" />
+        <activity android:name=".tabs.Fifa" />
+        <activity android:name=".tabs.COD" />
+        <activity android:name=".tabs.CSGO" />
+        <activity android:name=".tabs.Battlefield" />
+        <activity android:name=".tabs.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>
