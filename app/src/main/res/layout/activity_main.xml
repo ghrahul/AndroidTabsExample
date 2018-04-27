@@ -12,7 +12,9 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="20dp"
         android:backgroundTint="#ffffff"
-        android:src="@drawable/logout"></android.support.design.widget.FloatingActionButton>
+        android:src="@drawable/logout">
+
+    </android.support.design.widget.FloatingActionButton>
 
 
 
@@ -30,7 +32,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:background="?attr/colorPrimary"
+        android:background="#000000"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/Theme.AppCompat"
         >
@@ -40,8 +42,9 @@
             android:layout_width="wrap_content"
             android:src="@drawable/share3"
             android:scaleType="centerCrop"
+            android:background="#000000"
             android:layout_gravity="end"
-            android:layout_marginRight="2dp"
+            android:layout_marginRight="10dp"
             />
 
 

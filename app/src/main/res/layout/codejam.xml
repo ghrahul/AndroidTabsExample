@@ -11,9 +11,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="20dp"
-        android:backgroundTint="#a2b4b4b4"
-        android:src="@drawable/ic_add_black_24dp"
-        android:onClick="codejam"/>
+        android:backgroundTint="#00000000"
+        android:src="@drawable/regis"
+        android:onClick="codejam"
+        />
 
     <RelativeLayout
 
