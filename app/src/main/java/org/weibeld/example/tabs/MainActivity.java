@@ -2,6 +2,7 @@ package org.weibeld.example.tabs;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.internal.ScrimInsetsFrameLayout;
 import android.support.design.widget.TabLayout;
@@ -10,6 +11,9 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import org.weibeld.example.R;
 
@@ -33,11 +37,25 @@ public class MainActivity extends AppCompatActivity {
 
     // The ViewPager is responsible for sliding pages (fragments) in and out upon user input
     private ViewPager mViewPager;
-
+    ImageButton bt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+            bt=(ImageButton)findViewById(R.id.share);
+            bt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent myIntent = new Intent(Intent.ACTION_SEND);
+                    myIntent.setType("text/plain");
+                    String shareBody = "hi";
+                    String shareSub = "link here";
+                    myIntent.putExtra(Intent.EXTRA_SUBJECT,shareSub);
+                    myIntent.putExtra(Intent.EXTRA_TEXT,shareBody);
+                    startActivity(Intent.createChooser(myIntent,"Share Using"));
+                }
+            });
 
         // Set the Toolbar as the activity's app bar (instead of the default ActionBar)
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

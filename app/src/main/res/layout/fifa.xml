@@ -13,7 +13,7 @@
         android:layout_margin="20dp"
         android:backgroundTint="#a2b4b4b4"
         android:src="@drawable/ic_add_black_24dp"
-        />
+        android:onClick="codejam"/>
 
     <RelativeLayout
 
