@@ -4,6 +4,7 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.internal.ScrimInsetsFrameLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
@@ -42,6 +43,13 @@ public class MainActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     FirebaseAuth.AuthStateListener mAuthListener;
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mAuth.addAuthStateListener(mAuthListener);
+    }
+
+
     // The ViewPager is responsible for sliding pages (fragments) in and out upon user input
     private ViewPager mViewPager;
     ImageButton bt;
@@ -49,6 +57,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        fbutton = (FloatingActionButton) findViewById(R.id.logout);
+        mAuth= FirebaseAuth.getInstance();
+
+        mAuthListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                if (firebaseAuth.getCurrentUser()==null){
+                    startActivity(new Intent(MainActivity.this,Login.class));
+                }
+            }
+        };
+
+        fbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mAuth.signOut();
+            }
+        });
 
             bt=(ImageButton)findViewById(R.id.share);
             bt.setOnClickListener(new View.OnClickListener() {
