@@ -5,6 +5,7 @@ import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.internal.ScrimInsetsFrameLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -14,6 +15,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import org.weibeld.example.R;
 
@@ -34,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
             new Page2Fragment(),
             new Page3Fragment()
     };
+
+    FloatingActionButton fbutton;
+    FirebaseAuth mAuth;
+    FirebaseAuth.AuthStateListener mAuthListener;
 
     // The ViewPager is responsible for sliding pages (fragments) in and out upon user input
     private ViewPager mViewPager;

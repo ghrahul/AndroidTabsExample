@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "551988927270",
-    "firebase_url": "https://osproject-7ba9d.firebaseio.com",
-    "project_id": "osproject-7ba9d",
-    "storage_bucket": "osproject-7ba9d.appspot.com"
+    "project_number": "2642398535",
+    "firebase_url": "https://ospv2-1e090.firebaseio.com",
+    "project_id": "ospv2-1e090",
+    "storage_bucket": "ospv2-1e090.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:551988927270:android:4a4fbd20fd71ddf7",
+        "mobilesdk_app_id": "1:2642398535:android:4a4fbd20fd71ddf7",
         "android_client_info": {
           "package_name": "org.weibeld.example.tabs"
         }
       },
       "oauth_client": [
         {
-          "client_id": "551988927270-i8jsmm3f4acsk3ujt2bqf7o99mlaosa7.apps.googleusercontent.com",
+          "client_id": "2642398535-e6vie0kkme05s0llviql4pgkmmgksqg5.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "org.weibeld.example.tabs",
@@ -23,13 +23,13 @@
           }
         },
         {
-          "client_id": "551988927270-l3jh22ei7of10rj65qnqq2c15mq2am72.apps.googleusercontent.com",
+          "client_id": "2642398535-3a9ar516e01e7eomr1734dckovnp0g87.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA5EP6RIXeGwXOPjWvv3V-NXI6Zczipfvs"
+          "current_key": "AIzaSyA6cZoUB0nQB_wEx9KwpcvwIBsGFgeFw20"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "551988927270-l3jh22ei7of10rj65qnqq2c15mq2am72.apps.googleusercontent.com",
+              "client_id": "2642398535-3a9ar516e01e7eomr1734dckovnp0g87.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
