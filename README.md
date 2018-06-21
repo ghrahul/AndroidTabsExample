@@ -5,6 +5,9 @@
    
    The snaps of the prototype
    
+   ![screenshot_20180621 204212 1](https://user-images.githubusercontent.com/22416933/41738513-d7546578-75af-11e8-9274-7bf0411c2bb7.jpg)
+
+   
    
 
 
