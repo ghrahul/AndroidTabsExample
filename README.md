@@ -1,5 +1,5 @@
 
-### SINUSOID V2.0
+### Event Management App
 
    This is an android app for techfest of NIIT University.The major objective of this app is to show the schedule of all events and it allows all users to register in a particular event.
    
